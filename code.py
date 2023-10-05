@@ -41,7 +41,7 @@ df = df.loc[
     + 1 :
 ].reset_index(drop=True)
 df[0] = df[0].str.strip()
-allbets = np.array_split(df, df.loc[df[0].str.contains(r"^\d+\d+/\d+\d+$")].index)
+allbets = np.array_split(df, df.loc[df[0].str.contains(r"^\d\d/\d\d$")].index)
 d = defaultdict(list)
 for bet in allbets:
     d[len(bet)].append(bet)
