@@ -22,3 +22,5 @@ este vídeo é para você. Assista agora e comece a explorar o emocionante mundo
 
 Não se esqueça de deixar seus comentários e perguntas abaixo. Se gostou do vídeo, não hesite em curtir e compartilhar 
 com outros entusiastas das apostas esportivas. Inscreva-se no canal para mais conteúdo sobre tecnologia e apostas esportivas.
+
+## pip install selenium seleniumbase PrettyColorPrinter a-selenium2df
