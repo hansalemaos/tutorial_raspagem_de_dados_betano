@@ -48,7 +48,11 @@ for bet in allbets:
 df = pd.concat(
     [q.reset_index(drop=True) for q in d[sorted(d)[-1]]], axis=1, ignore_index=True
 )
-df=df.loc[np.setdiff1d(df.index,df[df=='SO'].dropna().index)].reset_index(drop=True)
+# para tirar o SO de jogos ao vivo 
+try:
+    df=df.loc[np.setdiff1d(df.index,df[df=='SO'].dropna().index)].reset_index(drop=True)
+except Exception:
+    pass 
 df = df.loc[
     np.setdiff1d(
         df.index,
